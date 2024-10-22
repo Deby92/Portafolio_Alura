@@ -50,10 +50,38 @@ a {
     font-size: 0.9rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 2px;
+    background-color: var(--color-de-fondo-menu);
+    margin: 100px;
+}
+.presentacion__titulo{
+    font-size: 50px;
+}
+.presentacion__foto{
+    margin-left: 5px;
+    width: 500px;
+}
+.redes{
+    display: flex;
+    gap: 15px;
+}
 
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
-
+.sobre-mi{
+    margin: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    align-items: start;
+}
+.sobre-mi__titulo{
+    font-size: 32px;
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
