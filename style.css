@@ -74,18 +74,32 @@ a {
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
-    margin: 300px;
-    margin-left: 100px;
-    margin-top: 100px;
-    align-items: start;
+    background-color: #EAF2FD;
+    padding: 100px;
 }
 .sobre-mi__titulo{
     font-size: 32px;
+    padding-left: 100px;
+    text-align: start;
+}
+.secction-sobre-mi-textos{
+    align-items: start;
+    padding-left: 100px;
+    margin: 100px;
+}
+.sobre-mi__texto{
+    padding-left: 100px;
+    margin-right: 600px;
+}
+
+.sobre-mi__firma{
+    padding-left: 100px;
 }
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 .habilidades__titulo{
     text-align: center;
+    padding: 50px;
 }
 .habilidades__lista{
     display:flex;
@@ -93,7 +107,7 @@ a {
     text-align: center;
 }
 .habilidades__elemento{
-    background-color: cadetblue;
+    background-color: white;
     width: 176px;
     height: 174px;
     display: flex;
@@ -109,6 +123,7 @@ a {
 /*------------------------------ Sección de Aficiones --------------------------------*/
 .aficiones__titulo{
     text-align: center;
+    padding: 50px;
 }
 .aficiones__lista{
     display:flex;
@@ -116,7 +131,7 @@ a {
     text-align: center;
 }
 .aficiones__elemento{
-    background-color: cadetblue;
+    background-color: white;
     width: 176px;
     height: 174px;
     display: flex;
@@ -126,10 +141,58 @@ a {
     gap: 5px;
     padding: 10px;
     margin: 5px;
+    margin-bottom: 50px;
+}
+/*------------------------------ Sección de Formacion Academica --------------------------------*/
+.formacion{
+    background-color: #EAF2FD;
+}
+.formacion__titulo{
+    text-align: center;
+    padding-top: 50px;
+}
+.formacion__lista{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 581px;
+    align-items: center;
+    
+}
+.formacion__elemento{
+    background-color: white;
+    width: 368px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.formacion__icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formacion-texto-descripcion{
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: left;
+}
+.formacion__nombre{
+    font-weight: bold;
 }
 
-/*------------------------------ Sección de Proyectos --------------------------------*/
 
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos{
+
+}
+.proyectos__titulo{
+    text-align: center;
+    padding-top: 50px;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
