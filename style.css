@@ -84,11 +84,9 @@ a {
 }
 .secction-sobre-mi-textos{
     align-items: start;
-    padding-left: 100px;
     margin: 100px;
 }
 .sobre-mi__texto{
-    padding-left: 100px;
     margin-right: 600px;
 }
 
@@ -98,6 +96,7 @@ a {
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 .habilidades__titulo{
+    font-size: 32px;
     text-align: center;
     padding: 50px;
 }
@@ -124,6 +123,7 @@ a {
 .aficiones__titulo{
     text-align: center;
     padding: 50px;
+    font-size: 32px;
 }
 .aficiones__lista{
     display:flex;
@@ -150,6 +150,7 @@ a {
 .formacion__titulo{
     text-align: center;
     padding-top: 50px;
+    font-size: 32px;
 }
 .formacion__lista{
     display: flex;
@@ -186,16 +187,21 @@ a {
 
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
-.proyectos{
 
-}
 .proyectos__titulo{
     text-align: center;
     padding-top: 50px;
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto{
+    background-color: #EAF2FD;
+}
+.contacto__titulo{
+    text-align: center;
+}
 
+/* ------------------------------ Footer ---------------------------------------*/
 
 /* ------------------------------ Responsividad ---------------------------------------*/
 
