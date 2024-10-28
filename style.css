@@ -31,6 +31,7 @@ a {
     align-items: center;
     padding: 1rem;
     background-color: var(--color-de-fondo-menu);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cabecera__logo {
@@ -58,6 +59,8 @@ a {
     padding: 2px;
     background-color: var(--color-de-fondo-menu);
     margin: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
 }
 .presentacion__titulo{
     font-size: 50px;
@@ -169,11 +172,16 @@ a {
     align-items: center;
     flex-direction: column;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .formacion__icono{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
+}
+.formacion__icono:hover{
+    opacity: 2;
 }
 .formacion-texto-descripcion{
     position: absolute;
@@ -221,13 +229,16 @@ a {
     border-radius: 2%;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-size: cover;
+    background-position: center; 
+    
 }
 input, textarea, button{
     margin: 10px;
     padding: 8px;
     border-radius: 5px;
     border: none;
-    color: #FFFFFF;
+    color: black;
 }
 .contacto__boton {
   align-items: center;
