@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fuente del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Mi Portafolio</title>
   </head>
 
@@ -242,23 +245,52 @@
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-      <h2 class="contacto__titulo">Contacto</h2>
-      <form class="contacto__formulario">
-        <input class="contacto__campo" type="text" placeholder="Nombre" />
-        <input
-          class="contacto__campo"
-          type="email"
-          placeholder="Correo Electrónico"
-        />
-        <textarea
-          class="contacto__campo contacto__campo--textarea"
-          placeholder="Mensaje"
-        ></textarea>
-        <button class="contacto__boton" type="submit">Enviar</button>
-      </form>
+      <div class="section-formulario">
+        <img class="img-contacto" src="/assets/contacto.jpg" alt="img-contacto" />
+        <form class="contacto__formulario">
+          <h2 class="contacto__titulo">Contacto</h2>
+          <h3 class="contacto_texto">
+            ¿Quieres contactarme?<br />Complete el siguiente formulario y me
+            pondre en contacto con usted lo antes posible.
+          </h3>
+          <input
+            class="contacto__campo"
+            type="text"
+            placeholder="Nombre"
+            id="name"
+            name="name"
+            required
+          />
+          <input
+            class="contacto__email"
+            type="email"
+            placeholder="Correo Electrónico"
+            id="email"
+            name="email"
+            required
+          />
+          <input
+            class="contacto__asunto"
+            type="text"
+            placeholder="Asunto"
+            id="subject"
+            name="subject"
+            required
+          />
+          <textarea
+            class="contacto__textarea"
+            id="message"
+            placeholder="Mensaje"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+          <button class="contacto__boton" type="submit" role="contacto__boton">Enviar</button>
+        </form>
+      </div>
     </section>
     <footer class="footer">
-      <h3>Desarrollado por Debora Cantuarias con &#10084;</h3>
+      <h3>Desarrollado por Debora Cantuarias con &#10084;<br>2024</h3>
     </footer>
   </body>
   <script src="script.js"></script>
