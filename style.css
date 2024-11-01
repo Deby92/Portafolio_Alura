@@ -194,13 +194,32 @@ a {
 }
 
 
-/*------------------------------ Sección de Proyectos --------------------------------*/
+/*------------------------------ Sección de Experiencia Profesional y Proyectos --------------------------------*/
 
 .proyectos__titulo{
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
 }
-
+.proyectos__contenedor{
+    margin: auto 100px;
+    padding-bottom: 50px;
+}
+.proyectos__descripcion{
+    padding: 15px;
+    padding-right: 100px;
+}
+.img-captura-encritador-de-texto{
+    width: 700px;
+    border-radius: 20px;
+    margin: auto 100px;
+}
+.tens-img{
+    width: 700px;
+    border-radius: 20px;
+    margin: auto 100px;
+    max-width: 100%;
+    height: auto;
+}
 /*------------------------------ Sección de Contacto ---------------------------------*/
 .contacto{
     background-color: #EAF2FD;
