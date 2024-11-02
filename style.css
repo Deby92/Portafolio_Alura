@@ -64,10 +64,14 @@ a {
 }
 .presentacion__titulo{
     font-size: 50px;
+    margin-left: 10px;
 }
 .presentacion__foto{
     margin-left: 5px;
     width: 500px;
+}
+.presentacion__subtitulo{
+    margin-left: 10px;
 }
 .redes{
     display: flex;
@@ -352,5 +356,95 @@ footer{
 
     .navegacion__elemento a {
         font-size: 1.1rem;
+    }
+}
+/* Para pantallas pequeñas, como smartphones (menores a 600px) */
+@media (max-width: 600px) {
+    .cabecera__titulo {
+        font-size: 1.2rem;
+    }
+
+    .presentacion {
+        flex-direction: column; /* Cambiar de fila a columna */
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .presentacion__foto {
+        width: 100%; /* Adaptar foto al 100% del contenedor */
+        max-width: 300px;
+    }
+
+    .sobre-mi {
+        padding: 20px; /* Reducir padding */
+    }
+
+    .sobre-mi__titulo {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+
+    .habilidades__lista,
+    .aficiones__lista {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+        justify-content: center;
+    }
+
+    .habilidades__elemento,
+    .aficiones__elemento {
+        width: 150px; /* Reducir el tamaño de cada elemento */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .formacion__lista {
+        flex-direction: column; /* Alinear verticalmente */
+        padding: 20px;
+    }
+
+    .proyectos__contenedor {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contacto {
+        padding: 20px;
+    }
+
+    .contacto__formulario {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Para pantallas medianas, como tablets (600px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cabecera__logo {
+        max-width: 80px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .presentacion {
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .presentacion__foto {
+        max-width: 400px;
+    }
+
+    .habilidades__lista,
+    .aficiones__lista {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .habilidades__elemento,
+    .aficiones__elemento {
+        width: 160px;
+        margin: 5px;
     }
 }
