@@ -212,12 +212,7 @@ a {
     padding: 15px;
     padding-right: 100px;
 }
-.img-captura-encritador-de-texto{
-    width: 700px;
-    border-radius: 20px;
-    margin: auto 100px;
-}
-.tens-img{
+.img-proyectos{
     width: 700px;
     border-radius: 20px;
     margin: auto 100px;
@@ -246,7 +241,6 @@ a {
 .contacto__formulario{
     display: flex;
     flex-direction: column;
-
 }
 .img-contacto{
     border-radius: 2%;
@@ -316,6 +310,7 @@ footer{
     font-size: 11px;
     font-weight: lighter;
     padding: 15px;
+    margin-bottom: 0%;
 }
 /* ------------------------------ Responsividad ---------------------------------------*/
 
@@ -345,6 +340,20 @@ footer{
     .navegacion__elemento a {
         font-size: 1rem;
     }
+    .sobre-mi__texto{
+        width: 100%;
+    }
+    .formacion__lista{
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        gap: 4rem;
+        padding-bottom: 3rem ;
+    }
+    .formacion-texto-descripcion, .formacion__nombre, .formacion__detalle{
+        position:relative;
+    }
+
 }
 
 /* Pantallas grandes */
@@ -363,7 +372,25 @@ footer{
     .cabecera__titulo {
         font-size: 1.2rem;
     }
+    .cabecera {
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
     .presentacion {
         flex-direction: column; /* Cambiar de fila a columna */
         margin: 10px;
@@ -391,15 +418,21 @@ footer{
     }
 
     .habilidades__elemento,
-    .aficiones__elemento {
-        width: 150px; /* Reducir el tamaño de cada elemento */
+    .aficiones__elemento,.formacion__lista{
+        width: 150px; 
         height: auto;
         margin: 10px 0;
     }
 
     .formacion__lista {
-        flex-direction: column; /* Alinear verticalmente */
-        padding: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        gap: 4rem;
+        padding-bottom: 6rem ;
+    }
+    .formacion-texto-descripcion, .formacion__nombre, .formacion__detalle{
+        position:relative;
     }
 
     .proyectos__contenedor {
@@ -407,13 +440,23 @@ footer{
         padding: 20px;
     }
 
-    .contacto {
-        padding: 20px;
+    .section-formulario {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
     }
-
-    .contacto__formulario {
+    .formacion__lista{
+        display: flex;
+        flex-flow: column wrap;
         width: 100%;
-        padding: 10px;
+    }
+    .sobre-mi__texto{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .proyectos{
+        margin: 0%
     }
 }
 
@@ -422,18 +465,48 @@ footer{
     .cabecera__logo {
         max-width: 80px;
     }
+    .cabecera {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
 
     .cabecera__titulo {
         font-size: 1.5rem;
     }
 
     .presentacion {
-        flex-direction: row;
-        margin: 20px;
+        flex-direction: column; /* Cambiar de fila a columna */
+        margin: 10px;
+        padding: 10px;
     }
 
     .presentacion__foto {
-        max-width: 400px;
+        width: 100%; /* Adaptar foto al 100% del contenedor */
+        max-width: 300px;
+    }
+    .sobre-mi__texto{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .habilidades__lista,
@@ -446,5 +519,20 @@ footer{
     .aficiones__elemento {
         width: 160px;
         margin: 5px;
+    }
+    .formacion__lista{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 4rem;
+        padding-bottom: 3rem ;
+    }
+    .formacion-texto-descripcion, .formacion__nombre, .formacion__detalle{
+        position:relative;
+    }
+    .section-formulario {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
     }
 }
